@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        .navbar-nav .nav-link {
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        footer .text-white a:hover {
+            color: white !important; 
+            text-decoration: underline;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary py-4">
+        <div class="container-fluid">
+        </div>
+    </nav>
+
+    <main>
+        <div class="container my-5">
+            <!-- Form Login -->
+            <div class="form-container">
+                <h2>Login</h2>
+                <form action="#" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                
+                <!-- Link lupa password di kanan -->
+                <div class="forgot-password mt-3">
+                    <a href="reset.html">Forget Password?</a>
+                </div>
+                <div class="create-account mt-3">
+                    <h6>
+                        Don’t you have an account? 
+                    <a href="daftar.html">Sign up?</a>
+                </h6>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer (kosongkan konten) -->
+    <footer class="bg-primary text-white py-4">
+        <!-- Footer tidak ada konten di sini -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
